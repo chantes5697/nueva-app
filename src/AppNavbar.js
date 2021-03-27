@@ -14,7 +14,6 @@ export default class AppNavbar extends Component {
       isOpen: !this.state.isOpen
     });
   }
-  
 
   render() {
     return <Navbar color="dark" dark expand="md">
@@ -29,13 +28,8 @@ export default class AppNavbar extends Component {
           <NavItem>
             <NavLink href="https://github.com/loizenai">GitHub</NavLink>
           </NavItem>
-          <NavItem>
-            <NavLink onClick="{logout}">Logout</NavLink>
-          </NavItem>
-
         </Nav>
       </Collapse>
     </Navbar>;
   }
 }
-

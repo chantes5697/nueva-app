@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
 import AppNavbar from './AppNavbar';
-import FirebaseService from '../services/FirebaseService';
+import FirebaseService from './services/FirebaseService';
 
 class CustomerEdit extends Component {
 
