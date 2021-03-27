@@ -11,6 +11,27 @@ const firebaseConfig = {
     measurementId: "G-CVXMWQ5NRY"
 };
 
+export const auth = firebase.auth();
+const googleProvider = new firebase.auth.GoogleAuthProvider()
+export const signInWithGoogle = () => {
+  auth.signInWithPopup(googleProvider).then((res) => {
+    console.log(res.user)
+  }).catch((error) => {
+    console.log(error.message)
+  })
+}
+
+export const logOut = () => {
+    auth.signOut().then(()=> {
+      console.log('logged out')
+    }).catch((error) => {
+      console.log(error.message)
+    })
+  }
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-export default firebase.database();
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+const database = firebase.database();
+
+export { firebase, googleAuthProvider, database as default };
+//export default firebase.database();

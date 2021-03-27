@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button, ButtonGroup, Container, Table } from 'reactstrap';
 import AppNavbar from './AppNavbar';
 import { Link } from 'react-router-dom';
-import FirebaseService from './services/FirebaseService';
+import FirebaseService from '../services/FirebaseService';
 
 class CustomerList extends Component {
 

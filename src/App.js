@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import Home from './Home';
+import Home from './components/Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import CustomerList from './CustomerList';
-import CustomerEdit from './CustomerEdit';
+import CustomerList from './components/CustomerList';
+import CustomerEdit from './components/CustomerEdit';
 
 class App extends Component {
   render() {
